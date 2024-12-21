@@ -67,7 +67,7 @@ Follow these instructions to set up the project locally.
 ## See Live
 
 You can view the live version of this portfolio website at the following link:
-[Portfolio Website - NeoMorphism](https://murshidm01.github.io/Portfolio-Website-NeoMorphism/)
+[Portfolio Website - NeoMorphism](https://murshidm01.github.io/Portfolio-Website-Neomorphism/)
 
 
 ## File Structure
