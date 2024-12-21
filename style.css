@@ -1,0 +1,460 @@
+/* Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+body {
+    background-color: #e0e0e0; /* Light background for neumorphic effect */
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: 'Akaya Kanadaka';
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+}
+
+/* Logo */
+.logo {
+    margin-right: 200px;
+    font-size: 32px;
+    font-family: 'Akaya Kanadaka';
+    font-weight: bolder;
+}
+.logo:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Neumorphic Button */
+.btn {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 8px 8px 15px #b3b3b3, -8px -8px 15px #ffffff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    box-shadow: inset 4px 4px 8px #b3b3b3, inset -4px -4px 8px #ffffff;
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #e0e0e0;
+    box-shadow: 8px 8px 15px #b3b3b3, -8px -8px 15px #ffffff;
+    border-radius: 20px;
+}
+
+/* Nav Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a,
+.home .projectbtn {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 6px 6px 12px #b3b3b3, -6px -6px 12px #ffffff;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Nav Links Hover */
+.nav-links a:hover,
+.home .projectbtn:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+    box-shadow: inset 4px 4px 8px #b3b3b3, inset -4px -4px 8px #ffffff;
+}
+
+.nav-links a:after,
+.home .projectbtn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background: #007bff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover:after,
+.home .projectbtn:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000;
+}
+
+.home .content h1 {
+    font-size: 3rem;
+}
+.home .content p {
+    margin-bottom: 22px;
+}
+
+.home .content span {
+    color: #007bff;
+}
+
+.home .content span:hover {
+    color: #ff0000;
+}
+.profile-image {
+    width: 400px; /* Adjust the size */
+    height: 400px; /* Adjust the size */
+    margin-top: 20px; /* Adds some space between the text and the image */
+  }
+
+/* About Section */
+.about-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.about-item {
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 15px #aaa, -5px -5px 15px #fff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.about-item:hover {
+    transform: scale(1.03);
+}
+.intro, .education, .title {
+    color: red;
+}
+
+/* Projects Section */
+.projects .project-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #e0e0e0;
+    box-shadow: 6px 6px 15px #b3b3b3, -6px -6px 15px #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 30%;
+    border-radius: 12px;
+}
+
+.project h3 {
+    margin-top: 15px;
+    color: #007bff;
+}
+
+.project p {
+    margin-bottom: 15px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-shadow: 6px 6px 15px #b3b3b3, -6px -6px 15px #ffffff;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill i {
+    font-size: 3rem;
+    color: #007bff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover i {
+    color: #333;
+    transform: scale(1.2);
+}
+
+/* Contact Section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    box-shadow: inset 6px 6px 15px #b3b3b3, inset -6px -6px 15px #ffffff;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+    box-shadow: 6px 6px 15px #b3b3b3, -6px -6px 15px #ffffff;
+    border-radius: 12px;
+}
+
+.footer span {
+    color: #ff0000;
+    font-family: 'Akaya Kanadaka';
+}
+
+.footer span:hover {
+    color: #007bff;
+}
+
+/* Neumorphic Experience Section */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-item {
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 15px #aaa, -5px -5px 15px #fff;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: scale(1.03);
+}
+
+/* Neumorphic Hire Me and Resume */
+.hire-me,
+.resume {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #e0e0e0;
+    box-shadow: 5px 5px 15px #aaa, -5px -5px 15px #fff;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.hire {
+    margin-bottom: 10px;
+}
+
+/* Container for the circular progress bar */
+.progress-circle-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+/* Circular progress bar */
+.progress-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SVG styling */
+.progress-svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); /* Start from the top */
+}
+
+/* Background circle */
+.progress-bg {
+    fill: none;
+    stroke: #000000;
+    stroke-width: 9px;
+}
+
+/* Progress bar circle */
+.progress-bar {
+    fill: none;
+    stroke: rgb(1, 217, 255);
+    stroke-width: 6;
+    stroke-dasharray: 282.6; /* 2 * PI * radius (2 * PI * 45) */
+    stroke-dashoffset: 0; /* Initially at its value based on percentage */
+    transition: stroke-dashoffset 0.1s linear; /* Smooth transition */
+}
+
+/* Text inside the circular progress bar */
+.progress-text {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        margin: 0 0 20px 0;
+    }
+
+    .home .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.2rem;
+    }
+
+    .projects .project-list {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center; /* Center align on small screens */
+    }
+
+    .skill {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    .contact-form {
+        width: 90%; /* Full width on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links a,
+    .home .projectbtn {
+        font-size: 1rem; /* Smaller font for mobile */
+    }
+
+    .project img {
+        width: 100%; /* Make images full width */
+    }
+
+    .skill i {
+        font-size: 2rem; /* Smaller icon size for mobile */
+    }
+}
+
+/* Menu Icon Styles */
+.menu-icon {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menu-icon .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex; /* Show menu icon on mobile */
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute; /* Position absolute for dropdown */
+        background-color: #e0e0e0; /* Background color to match design */
+        width: 100%; /* Full width */
+        top: 60px; /* Adjust as needed based on navbar height */
+        left: 0;
+        z-index: 10; /* Ensure it appears above other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+}
