@@ -69,3 +69,36 @@ const navLinks = document.getElementById('nav-links');
 menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
+
+// Typing Effect
+const textElement = document.getElementById('dynamic-text');
+const textArray = ['Ali Khan'];
+let arrayIndex = 0;
+let charIndex = 0;
+let typing = true;
+
+function typeEffect() {
+    if (typing) {
+        if (charIndex < textArray[arrayIndex].length) {
+            textElement.textContent += textArray[arrayIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(typeEffect, 150);
+        } else {
+            typing = false;
+            setTimeout(typeEffect, 1000); // Pause before starting to delete
+        }
+    } else {
+        if (charIndex > 0) {
+            textElement.textContent = textArray[arrayIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeEffect, 100);
+        } else {
+            typing = true;
+            setTimeout(typeEffect, 500); // Pause before starting to type again
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    typeEffect();
+});

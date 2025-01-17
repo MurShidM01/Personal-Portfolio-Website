@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ali Khan Jalbani || Portfolio-Website</title>
+    <meta name="description" content="Ali Khan Jalbani - Front-End Developer & Python Developer Portfolio" />
+    <meta name="keywords" content="web developer, python developer, portfolio, front-end developer" />
+    <title>Ali Khan Jalbani | Portfolio</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -12,20 +13,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Akaya+Kanadaka&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">MurShidM</div>
+        <div class="logo">Ali Khan</div>
         <div class="menu-icon" id="menu-icon">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -33,6 +28,8 @@
         </div>
         <ul class="nav-links" id="nav-links">
           <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -40,194 +37,285 @@
       </nav>
     </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section home">
         <div class="content">
-          <h1>Hello, I'm <span>Ali Khan</span></h1>
-          <p>Front-End Developer & Designer | Python Developer</p>
-          <a href="#projects" class="projectbtn">View My Work</a>
+          <h1 class="typing-effect">Hello, I'm <span id="dynamic-text">Ali Khan</span></h1>
+          <p>Front-End Developer & Python Developer</p>
+          <div class="cta-buttons">
+            <a href="#projects" class="projectbtn">View My Work</a>
+            <a href="#contact" class="projectbtn secondary">Contact Me</a>
+          </div>
         </div>
         <div class="image">
-            <img src="images/Profile.png" alt="Ali Khan" class="profile-image">
+          <img src="images/Profile.png" alt="Ali Khan - Professional Portrait" class="profile-image" />
         </div>
-    </section>    
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <div class="about-list">
-        <div class="about-item">
-          <h3 class="intro">Introduction</h3>
-          <p>
-            My Name Is Ali Khan a FrontEnd Web Developer and Python Developer.
-            I'm Possionate About staying ahead in Technology. I actively seek
-            new tools, frameworks, and methodologies to enhance my skills.
-          </p>
+      <!-- About Section -->
+      <section id="about" class="section about">
+        <h2>About Me</h2>
+        <div class="about-list">
+          <div class="about-item">
+            <i class="fas fa-user-circle"></i>
+            <h3 class="intro">Introduction</h3>
+            <p>
+              I'm a passionate Front-End Web Developer and Python Developer with a
+              keen eye for creating engaging user experiences. I stay ahead in
+              technology by actively seeking new tools, frameworks, and
+              methodologies to enhance my skills.
+            </p>
+          </div>
+          <div class="about-item">
+            <i class="fas fa-graduation-cap"></i>
+            <h3 class="education">Education</h3>
+            <p>
+              Currently pursuing a Bachelor's degree in Management Sciences at NED
+              University of Engineering and Technology, Karachi, Pakistan.
+              Expected graduation: June 2026.
+            </p>
+          </div>
         </div>
-        <div class="about-item">
-          <h3 class="education">Education</h3>
-          <p>
-            Currently Pursuing a Degree In Bs Management Sciences at NED
-            University Of Engineering and Technology Karachi, Pakistan, Will
-            Graduate In June, 2026
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section experience">
-      <h2>My Experience</h2>
-      <div class="experience-list">
-        <div class="experience-item">
-          <h3 class="title">Frontend Developer</h3>
-          <p>Fiverr && Upwork - 2022 to Present</p>
-          <p>
-            Developed responsive websites using HTML, CSS, JavaScript, and
-            React. Worked with design teams to bring creative ideas to life with
-            a focus on user experience and performance.
-          </p>
+      <!-- Experience Section -->
+      <section id="experience" class="section experience">
+        <h2>My Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <i class="fas fa-code"></i>
+            <h3 class="title">Frontend Developer</h3>
+            <p class="duration">Fiverr & Upwork | 2022 - Present</p>
+            <ul class="responsibilities">
+              <li>Developed responsive websites using HTML, CSS, and JavaScript</li>
+              <li>Collaborated with design teams to implement creative solutions</li>
+              <li>Optimized websites for maximum speed and scalability</li>
+              <li>Maintained high client satisfaction with 5-star ratings</li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <i class="fab fa-python"></i>
+            <h3 class="title">Python Developer</h3>
+            <p class="duration">Fiverr & Upwork | 2021 - 2022</p>
+            <ul class="responsibilities">
+              <li>Built automation scripts and desktop applications</li>
+              <li>Developed data visualization tools using Python libraries</li>
+              <li>Created efficient algorithms for data processing</li>
+              <li>Delivered high-quality solutions to diverse clients</li>
+            </ul>
+          </div>
         </div>
-        <div class="experience-item">
-          <h3 class="title">Python Developer</h3>
-          <p>Fiverr && Upwork - 2021 to 2022</p>
-          <p>
-            Automated tasks using Python and built web applications and Desktop
-            applications. Developed data visualization tools for business
-            intelligence using Python libraries like Pandas and Matplotlib.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-      <h2>My Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <img src="images/project-1.png" alt="Project 1" />
-          <h3>YouTube Playlist Downloader Desktop Application</h3>
-          <p>The YouTube Playlist Downloader is built using Python</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="project">
-          <img src="images/project-2.png" alt="project-2" />
-          <h3>YouTube Videos/Audios Web Application</h3>
-          <p>
-            Web application built with Python and Flask to download YouTube
-            videos in MP4 or MP3 formats
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="project">
-          <img src="images/project-3.png" alt="Project 3" />
-          <h3>Graphic Calculator & TicTacToe Game Python</h3>
-          <p>
-            My First Project Of University In Which a TicTacToe Game a
-            Trignometric Graphic Calculator
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-        <div class="project">
-          <img src="images/project-4.png" alt="Project 4" />
-          <h3>Capture Images and Set as Wallpaper</h3>
-          <p>This Android App Capture The Images and Set It as Wallpaper</p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
+      <!-- Projects Section -->
+      <section id="projects" class="section projects">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+          <div class="project">
+            <div class="project-img">
+              <img src="images/project-1.png" alt="YouTube Playlist Downloader" />
+            </div>
+            <div class="project-content">
+              <h3>YouTube Playlist Downloader</h3>
+              <p>A desktop application built with Python that allows users to download entire YouTube playlists efficiently.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>PyQt5</span>
+                <span>pytube</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-      <h2>My Skills</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <i class="fab fa-python"></i>
-          <h3>Python</h3>
-          <div class="progress-circle-container" data-value="85">
-            <div class="progress-circle">
-              <svg class="progress-svg" viewBox="0 0 100 100">
-                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-              </svg>
-              <span class="progress-text">85%</span>
+          <div class="project">
+            <div class="project-img">
+              <img src="images/project-2.png" alt="YouTube Video Converter" />
+            </div>
+            <div class="project-content">
+              <h3>YouTube Video Converter</h3>
+              <p>Web application for downloading YouTube videos in various formats, built with Python and Flask.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project">
+            <div class="project-img">
+              <img src="images/project-3.png" alt="Scientific Calculator" />
+            </div>
+            <div class="project-content">
+              <h3>Scientific Calculator & Games</h3>
+              <p>A Python application featuring a graphical calculator and classic games like TicTacToe.</p>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Tkinter</span>
+                <span>NumPy</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="skill">
-          <i class="fab fa-html5"></i>
-          <h3>HTML5</h3>
-          <div class="progress-circle-container" data-value="80">
-            <div class="progress-circle">
-              <svg class="progress-svg" viewBox="0 0 100 100">
-                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-              </svg>
-              <span class="progress-text">80%</span>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <i class="fab fa-python"></i>
+            <h3>Python</h3>
+            <div class="progress-circle-container" data-value="85">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <span class="progress-text">85%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fab fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="progress-circle-container" data-value="80">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <span class="progress-text">80%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="progress-circle-container" data-value="75">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <span class="progress-text">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-circle-container" data-value="70">
+              <div class="progress-circle">
+                <svg class="progress-svg" viewBox="0 0 100 100">
+                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+                </svg>
+                <span class="progress-text">70%</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="skill">
-          <i class="fab fa-css3-alt"></i>
-          <h3>CSS</h3>
-          <div class="progress-circle-container" data-value="70">
-            <div class="progress-circle">
-              <svg class="progress-svg" viewBox="0 0 100 100">
-                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-              </svg>
-              <span class="progress-text">70%</span>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:alikhanjalbani@outlook.com">Ali Khan Jalbani</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <h3>LinkedIn</h3>
+              <p><a href="https://pk.linkedin.com/in/ali-khan-jalbani" target="_blank">Ali Khan Jalbani</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/MurShidM01" target="_blank">MurShidM01</a></p>
             </div>
           </div>
+          <form class="contact-form" id="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
-        <div class="skill">
-          <i class="fab fa-js"></i>
-          <h3>JavaScript</h3>
-          <div class="progress-circle-container" data-value="60">
-            <div class="progress-circle">
-              <svg class="progress-svg" viewBox="0 0 100 100">
-                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-              </svg>
-              <span class="progress-text">60%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- New Hire Me and Resume Section -->
-    <section id="hire-me" class="section hire-me">
-      <h2>Hire Me</h2>
-      <p class="hire">
-        If you want to work together or hire me for your project, feel free to
-        reach out!
-      </p>
-      <a href="#contact" class="btn">Hire Me</a>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="section resume">
-      <h2>CheCk Resume</h2>
-      <a href="resume/CV.pdf" target="_blank" class="btn">See Resume</a>
-      <!-- PDF opens in a new tab -->
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
-      <p>&copy; 2024 <span>MurShidM</span> All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <p>&copy; 2024 Ali Khan. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      // Mobile menu toggle
+      const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.getElementById('nav-links');
+      
+      menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+
+      // Close menu when clicking a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+      // Progress circle animation
+      document.querySelectorAll('.progress-circle-container').forEach(container => {
+        const circle = container.querySelector('.progress-bar');
+        const value = container.dataset.value;
+        const radius = circle.r.baseVal.value;
+        const circumference = radius * 2 * Math.PI;
+        
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = circumference;
+        
+        function setProgress(percent) {
+          const offset = circumference - (percent / 100) * circumference;
+          circle.style.strokeDashoffset = offset;
+        }
+        
+        setProgress(value);
+      });
+    </script>
   </body>
 </html>
