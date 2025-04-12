@@ -9,13 +9,13 @@
   [![GitHub forks](https://img.shields.io/github/forks/MurShidM01/Personal-Portfolio?style=social)](https://github.com/MurShidM01/Personal-Portfolio/network)
   [![GitHub issues](https://img.shields.io/github/issues/MurShidM01/Personal-Portfolio)](https://github.com/MurShidM01/Personal-Portfolio/issues)
   [![GitHub license](https://img.shields.io/github/license/MurShidM01/Personal-Portfolio)](https://github.com/MurShidM01/Personal-Portfolio/blob/main/LICENSE)
-  [![Website](https://img.shields.io/website?url=https%3A%2F%2Fmurshidm01.github.io%2FPersonal-Portfolio)](https://murshidm01.github.io/Personal-Portfolio)
+  [![Live Demo](https://img.shields.io/badge/Demo-Live%20Website-green)](https://murshidm01.github.io/Personal-Portfolio-Website/)
+  [![Website](https://img.shields.io/website?url=https%3A%2F%2Fmurshidm01.github.io%2FPersonal-Portfolio-Website%2F)](https://murshidm01.github.io/Personal-Portfolio-Website/)
 </div>
 
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Technologies Used](#-technologies-used)
 - [Setup and Installation](#-setup-and-installation)
 - [Project Structure](#-project-structure)
 - [Contributing](#-contributing)
