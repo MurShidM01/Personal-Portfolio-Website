@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Ali Khan Jalbani - Front-End Developer & Python Developer Portfolio" />
-    <meta name="keywords" content="web developer, python developer, portfolio, front-end developer" />
+    <meta name="keywords" content="portfolio, front-end, developer, python, web design" />
+    <meta name="author" content="Ali Khan Jalbani" />
     <title>Ali Khan Jalbani | Portfolio</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
@@ -13,14 +15,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Akaya+Kanadaka&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Loading Animation -->
+    <div class="loading">
+      <div class="loader"></div>
+      <div class="loader-text">Loading Portfolio</div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
     <header>
       <nav class="navbar">
-        <div class="logo">Ali Khan</div>
+        <div class="logo">MurShidM</div>
         <div class="menu-icon" id="menu-icon">
           <div class="bar"></div>
           <div class="bar"></div>
@@ -37,285 +56,269 @@
       </nav>
     </header>
 
-    <main>
-      <!-- Home Section -->
-      <section id="home" class="section home">
-        <div class="content">
-          <h1 class="typing-effect">Hello, I'm <span id="dynamic-text">Ali Khan</span></h1>
-          <p>Front-End Developer & Python Developer</p>
-          <div class="cta-buttons">
-            <a href="#projects" class="projectbtn">View My Work</a>
-            <a href="#contact" class="projectbtn secondary">Contact Me</a>
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="content fadeIn">
+          <h1>Hello, I'm <span>Ali Khan</span></h1>
+          <p>Front-End Developer & Designer | Python Developer</p>
+          <a href="#projects" class="projectbtn">View My Work</a>
+        </div>
+        <div class="image fadeIn">
+            <img src="images/Profile.png" alt="Ali Khan" class="profile-image">
+        </div>
+    </section>    
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="about-list">
+        <div class="about-item fadeIn">
+          <h3 class="intro">Introduction</h3>
+          <p>
+            My Name Is Ali Khan, a Front-End Web Developer and Python Developer.
+            I'm passionate about staying ahead in Technology. I actively seek
+            new tools, frameworks, and methodologies to enhance my skills.
+          </p>
+        </div>
+        <div class="about-item fadeIn">
+          <h3 class="education">Education</h3>
+          <p>
+            Currently pursuing a degree in BS Management Sciences at NED
+            University Of Engineering and Technology Karachi, Pakistan. Will
+            graduate in June, 2026.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+      <h2>My Experience</h2>
+      <div class="experience-list">
+        <div class="experience-item fadeIn">
+          <h3 class="title">Frontend Developer</h3>
+          <p><i class="far fa-calendar-alt"></i> Fiverr & Upwork - 2022 to Present</p>
+          <p>
+            <i class="fas fa-angle-right"></i> Developed responsive websites using HTML, CSS, JavaScript, and
+            React.
+          </p>
+          <p>
+            <i class="fas fa-angle-right"></i> Worked with design teams to bring creative ideas to life with
+            a focus on user experience and performance.
+          </p>
+          <p>
+            <i class="fas fa-angle-right"></i> Created mobile-first, responsive design solutions for client websites.
+          </p>
+        </div>
+        <div class="experience-item fadeIn">
+          <h3 class="title">Python Developer</h3>
+          <p><i class="far fa-calendar-alt"></i> Fiverr & Upwork - 2021 to 2022</p>
+          <p>
+            <i class="fas fa-angle-right"></i> Automated tasks using Python and built web applications and Desktop
+            applications.
+          </p>
+          <p>
+            <i class="fas fa-angle-right"></i> Developed data visualization tools for business
+            intelligence using Python libraries like Pandas and Matplotlib.
+          </p>
+          <p>
+            <i class="fas fa-angle-right"></i> Created command-line utilities and scripts to optimize workflow processes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project fadeIn">
+          <img src="images/project-1.png" alt="YouTube Playlist Downloader" />
+          <div class="project-content">
+            <h3>YouTube Playlist Downloader Desktop Application</h3>
+            <p>A desktop application built with Python and CustomTkinter featuring a modern dark-themed UI for downloading entire YouTube playlists.</p>
+            <a href="https://github.com/MurShidM01/YouTube-Playlist-Downloader-Application" target="_blank" class="btn">View Project</a>
           </div>
         </div>
-        <div class="image">
-          <img src="images/Profile.png" alt="Ali Khan - Professional Portrait" class="profile-image" />
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section id="about" class="section about">
-        <h2>About Me</h2>
-        <div class="about-list">
-          <div class="about-item">
-            <i class="fas fa-user-circle"></i>
-            <h3 class="intro">Introduction</h3>
-            <p>
-              I'm a passionate Front-End Web Developer and Python Developer with a
-              keen eye for creating engaging user experiences. I stay ahead in
-              technology by actively seeking new tools, frameworks, and
-              methodologies to enhance my skills.
-            </p>
-          </div>
-          <div class="about-item">
-            <i class="fas fa-graduation-cap"></i>
-            <h3 class="education">Education</h3>
-            <p>
-              Currently pursuing a Bachelor's degree in Management Sciences at NED
-              University of Engineering and Technology, Karachi, Pakistan.
-              Expected graduation: June 2026.
-            </p>
+        <div class="project fadeIn">
+          <img src="images/project-2.png" alt="YouTube Downloader Web App" />
+          <div class="project-content">
+            <h3>YouTube Videos Downloader Web App</h3>
+            <p>A user-friendly web application built with Python and Flask to download YouTube videos in MP4 or MP3 formats.</p>
+            <a href="https://github.com/MurShidM01/YouTube-Downloader-Web-App-Python" target="_blank" class="btn">View Project</a>
           </div>
         </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="section experience">
-        <h2>My Experience</h2>
-        <div class="experience-list">
-          <div class="experience-item">
-            <i class="fas fa-code"></i>
-            <h3 class="title">Frontend Developer</h3>
-            <p class="duration">Fiverr & Upwork | 2022 - Present</p>
-            <ul class="responsibilities">
-              <li>Developed responsive websites using HTML, CSS, and JavaScript</li>
-              <li>Collaborated with design teams to implement creative solutions</li>
-              <li>Optimized websites for maximum speed and scalability</li>
-              <li>Maintained high client satisfaction with 5-star ratings</li>
-            </ul>
-          </div>
-          <div class="experience-item">
-            <i class="fab fa-python"></i>
-            <h3 class="title">Python Developer</h3>
-            <p class="duration">Fiverr & Upwork | 2021 - 2022</p>
-            <ul class="responsibilities">
-              <li>Built automation scripts and desktop applications</li>
-              <li>Developed data visualization tools using Python libraries</li>
-              <li>Created efficient algorithms for data processing</li>
-              <li>Delivered high-quality solutions to diverse clients</li>
-            </ul>
+        <div class="project fadeIn">
+          <img src="images/project-3.png" alt="Trigonometric Functions Graph App" />
+          <div class="project-content">
+            <h3>Trigonometric Functions Graph App</h3>
+            <p>University project featuring a TicTacToe game and trigonometric graphic calculator built with Python and Streamlit.</p>
+            <a href="https://github.com/MurShidM01/Trignometric-Functions-Graph-App-and-Tic-Tac-Toe-Game-In-Streamlit" target="_blank" class="btn">View Project</a>
           </div>
         </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="section projects">
-        <h2>Featured Projects</h2>
-        <div class="project-list">
-          <div class="project">
-            <div class="project-img">
-              <img src="images/project-1.png" alt="YouTube Playlist Downloader" />
-            </div>
-            <div class="project-content">
-              <h3>YouTube Playlist Downloader</h3>
-              <p>A desktop application built with Python that allows users to download entire YouTube playlists efficiently.</p>
-              <div class="project-tech">
-                <span>Python</span>
-                <span>PyQt5</span>
-                <span>pytube</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-img">
-              <img src="images/project-2.png" alt="YouTube Video Converter" />
-            </div>
-            <div class="project-content">
-              <h3>YouTube Video Converter</h3>
-              <p>Web application for downloading YouTube videos in various formats, built with Python and Flask.</p>
-              <div class="project-tech">
-                <span>Python</span>
-                <span>Flask</span>
-                <span>JavaScript</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project">
-            <div class="project-img">
-              <img src="images/project-3.png" alt="Scientific Calculator" />
-            </div>
-            <div class="project-content">
-              <h3>Scientific Calculator & Games</h3>
-              <p>A Python application featuring a graphical calculator and classic games like TicTacToe.</p>
-              <div class="project-tech">
-                <span>Python</span>
-                <span>Tkinter</span>
-                <span>NumPy</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="btn"><i class="fab fa-github"></i> Code</a>
-                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> Demo</a>
-              </div>
-            </div>
+        <div class="project fadeIn">
+          <img src="images/project-4.png" alt="TicTacToe Game" />
+          <div class="project-content">
+            <h3>TicTacToe Game</h3>
+            <p>A desktop application built with Python featuring a classic TicTacToe game with a modern UI.</p>
+            <a href="https://github.com/MurShidM01/TicTacToe-Game-Desktop-Application-By-Python" target="_blank" class="btn">View Project</a>
           </div>
         </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="section skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-container">
-          <div class="skill">
-            <i class="fab fa-python"></i>
-            <h3>Python</h3>
-            <div class="progress-circle-container" data-value="85">
-              <div class="progress-circle">
-                <svg class="progress-svg" viewBox="0 0 100 100">
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <span class="progress-text">85%</span>
-              </div>
-            </div>
+        <div class="project fadeIn">
+          <img src="images/project-5.png" alt="Portfolio Website" />
+          <div class="project-content">
+            <h3>Web2Exe Python Tool</h3>
+            <p>A Python tool that converts HTML, CSS, and JavaScript files into executable Windows applications.</p>
+            <a href="https://github.com/MurShidM01/Web2Exe-Python-Tool" target="_blank" class="btn">View Project</a>
           </div>
-
-          <div class="skill">
-            <i class="fab fa-html5"></i>
-            <h3>HTML5</h3>
-            <div class="progress-circle-container" data-value="80">
-              <div class="progress-circle">
-                <svg class="progress-svg" viewBox="0 0 100 100">
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <span class="progress-text">80%</span>
-              </div>
-            </div>
+        </div>
+        <div class="project fadeIn">
+          <img src="images/project-6.svg" alt="Neomorphism Portfolio" />
+          <div class="project-content">
+            <h3>VisionForge Image Genrator Full Stack Website</h3>
+            <p>A Full Stack website that generates ai images professional and clean ui.</p>
+            <a href="https://github.com/MurShidM01/VisionForge-Image-Genrator-Website" target="_blank" class="btn">View Project</a>
           </div>
-
-          <div class="skill">
-            <i class="fab fa-css3-alt"></i>
-            <h3>CSS3</h3>
-            <div class="progress-circle-container" data-value="75">
-              <div class="progress-circle">
-                <svg class="progress-svg" viewBox="0 0 100 100">
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <span class="progress-text">75%</span>
-              </div>
-            </div>
+        </div>
+        <div class="project fadeIn">
+          <img src="images/project-7.png" alt="Neomorphism Portfolio" />
+          <div class="project-content">
+            <h3>MurShidM AI ChatBot Flutter</h3>
+            <p>A sophisticated Flutter-based AI chat assistant leveraging Google's Gemini Pro API, featuring a modern Material Design 3 interface and comprehensive chat functionality.</p>
+            <a href="https://github.com/MurShidM01/MurShidM-AI-Chatbot-App-Flutter-and-Dart" target="_blank" class="btn">View Project</a>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="skill">
-            <i class="fab fa-js"></i>
-            <h3>JavaScript</h3>
-            <div class="progress-circle-container" data-value="70">
-              <div class="progress-circle">
-                <svg class="progress-svg" viewBox="0 0 100 100">
-                  <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
-                  <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
-                </svg>
-                <span class="progress-text">70%</span>
-              </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill fadeIn">
+          <i class="fab fa-python"></i>
+          <h3>Python</h3>
+          <div class="progress-circle-container" data-value="85">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">85%</span>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="section contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-container">
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:alikhanjalbani@outlook.com">Ali Khan Jalbani</a></p>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-linkedin"></i>
-              <h3>LinkedIn</h3>
-              <p><a href="https://pk.linkedin.com/in/ali-khan-jalbani" target="_blank">Ali Khan Jalbani</a></p>
-            </div>
-            <div class="contact-item">
-              <i class="fab fa-github"></i>
-              <h3>GitHub</h3>
-              <p><a href="https://github.com/MurShidM01" target="_blank">MurShidM01</a></p>
+        <div class="skill fadeIn">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <div class="progress-circle-container" data-value="80">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">80%</span>
             </div>
           </div>
-          <form class="contact-form" id="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-          </form>
         </div>
-      </section>
-    </main>
+        <div class="skill fadeIn">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <div class="progress-circle-container" data-value="70">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">70%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill fadeIn">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-circle-container" data-value="60">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">60%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill fadeIn">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-circle-container" data-value="55">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">55%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill fadeIn">
+          <i class="fas fa-database"></i>
+          <h3>SQL</h3>
+          <div class="progress-circle-container" data-value="65">
+            <div class="progress-circle">
+              <svg class="progress-svg" viewBox="0 0 100 100">
+                <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                <circle class="progress-bar" cx="50" cy="50" r="45"></circle>
+              </svg>
+              <span class="progress-text">65%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire Me Section -->
+    <section id="hire-me" class="section hire-me">
+      <h2>Hire Me</h2>
+      <p class="hire">
+        If you're looking for a dedicated developer who can bring your ideas to life with clean code and modern design, I'm ready to help!
+      </p>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume">
+      <h2>My Resume</h2>
+      <p class="hire">Download my resume to learn more about my skills, experience, and education.</p>
+      <a href="resume/CV.pdf" target="_blank" class="btn">Download CV</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:alikhanjalbani@outlook.com"><i class="far fa-envelope"></i></a>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
 
     <footer class="footer">
-      <div class="social-links">
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <div class="social-icons">
+        <a href="https://github.com/MurShidM01" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/alikhanjalbani" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://facebook.com/Murshid.NFAK" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="mailto:alikhanjalbani@outlook.com"><i class="far fa-envelope"></i></a>
       </div>
-      <p>&copy; 2024 Ali Khan. All rights reserved.</p>
+      <p>&copy; 2025 <span>MurShidM</span> All Rights Reserved.</p>
     </footer>
 
-    <script>
-      // Mobile menu toggle
-      const menuIcon = document.getElementById('menu-icon');
-      const navLinks = document.getElementById('nav-links');
-      
-      menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-      });
-
-      // Close menu when clicking a link
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-          navLinks.classList.remove('active');
-        });
-      });
-
-      // Smooth scroll
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-          });
-        });
-      });
-
-      // Progress circle animation
-      document.querySelectorAll('.progress-circle-container').forEach(container => {
-        const circle = container.querySelector('.progress-bar');
-        const value = container.dataset.value;
-        const radius = circle.r.baseVal.value;
-        const circumference = radius * 2 * Math.PI;
-        
-        circle.style.strokeDasharray = `${circumference} ${circumference}`;
-        circle.style.strokeDashoffset = circumference;
-        
-        function setProgress(percent) {
-          const offset = circumference - (percent / 100) * circumference;
-          circle.style.strokeDashoffset = offset;
-        }
-        
-        setProgress(value);
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

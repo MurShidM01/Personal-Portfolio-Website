@@ -1,107 +1,114 @@
-# 🎨 Portfolio Website - Neomorphism Style
+# 🚀 Personal Portfolio Website
 
 <div align="center">
-
-[![GitHub stars](https://img.shields.io/github/stars/MurShidM01/Portfolio-Website-Neomorphism?style=for-the-badge)](https://github.com/MurShidM01/Portfolio-Website-Neomorphism/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/MurShidM01/Portfolio-Website-Neomorphism?style=for-the-badge)](https://github.com/MurShidM01/Portfolio-Website-Neomorphism/network)
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg?style=for-the-badge)](https://murshidm01.github.io/Portfolio-Website-Neomorphism/)
-[![License](https://img.shields.io/github/license/MurShidM01/Portfolio-Website-Neomorphism?style=for-the-badge)](LICENSE)
-
-<h3>A Modern Portfolio Website with Neomorphic Design</h3>
-
-[View Demo](https://murshidm01.github.io/Portfolio-Website-Neomorphism/) • [Report Bug](https://github.com/MurShidM01/Portfolio-Website-Neomorphism/issues) • [Request Feature](https://github.com/MurShidM01/Portfolio-Website-Neomorphism/issues)
-
+  <img src="images/Profile.png" alt="Ali Khan" width="200" style="border-radius: 50%; border: 5px solid #3b82f6; box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);" />
+  
+  <h2>Modern, Responsive Portfolio Website</h2>
+  
+  [![GitHub stars](https://img.shields.io/github/stars/MurShidM01/Personal-Portfolio?style=social)](https://github.com/MurShidM01/Personal-Portfolio/stargazers)
+  [![GitHub forks](https://img.shields.io/github/forks/MurShidM01/Personal-Portfolio?style=social)](https://github.com/MurShidM01/Personal-Portfolio/network)
+  [![GitHub issues](https://img.shields.io/github/issues/MurShidM01/Personal-Portfolio)](https://github.com/MurShidM01/Personal-Portfolio/issues)
+  [![GitHub license](https://img.shields.io/github/license/MurShidM01/Personal-Portfolio)](https://github.com/MurShidM01/Personal-Portfolio/blob/main/LICENSE)
+  [![Website](https://img.shields.io/website?url=https%3A%2F%2Fmurshidm01.github.io%2FPersonal-Portfolio)](https://murshidm01.github.io/Personal-Portfolio)
 </div>
 
----
+## 📋 Table of Contents
 
-## 🌟 About The Project
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Setup and Installation](#-setup-and-installation)
+- [Project Structure](#-project-structure)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
-Welcome to my personal portfolio website! This project showcases my professional journey through a modern neomorphic design approach, creating a unique and engaging user experience.
+## ✨ Features
 
-### ✨ Key Highlights
+- 🎨 Modern and Responsive Design
+- ⚡ Smooth Animations and Transitions
+- 📱 Mobile-First Approach
+- 🌐 Cross-Browser Compatibility
+- 🎯 Interactive UI Elements
+- 📊 Dynamic Skill Progress Bars
+- 📧 Contact Form Integration
+- 🔝 Scroll-to-Top Functionality
+- 🌙 Dark Mode Support
 
-- 🎯 Modern Neomorphic UI Design
-- 📱 Fully Responsive Layout
-- ⚡ Optimized Performance
-- 🌙 Smooth Animations
-- 📄 Downloadable Resume
-- 📬 Interactive Contact Form
+## 🛠️ Technologies Used
 
-## 🚀 Features
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google_Fonts-4285F4?style=for-the-badge&logo=google&logoColor=white" />
+</div>
 
-<details>
-<summary>Click to expand features</summary>
+## 🚀 Setup and Installation
 
-- **Responsive Design** 📱
-  - Seamless experience across all devices
-  - Mobile-first approach
-  - Fluid layouts and transitions
-
-- **Interactive Elements** ✨
-  - Smooth scroll animations
-  - Dynamic content loading
-  - Hover effects and transitions
-
-- **Professional Sections** 📋
-  - About Me
-  - Skills & Expertise
-  - Project Showcase
-  - Contact Information
-  - Downloadable Resume
-
-</details>
-
-## 🛠️ Built With
-
-- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-
-## 🏃‍♂️ Getting Started
-
-### Prerequisites
-
-- A modern web browser
-- Code editor (recommended: [VS Code](https://code.visualstudio.com/))
-
-### 📥 Installation
-
-1. Clone the repository
-   ```sh
-   git clone https://github.com/MurShidM01/Portfolio-Website-NeoMorphism.git
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MurShidM01/Personal-Portfolio.git
+   cd Personal-Portfolio
    ```
-2. Navigate to project directory
-   ```sh
-   cd Portfolio-Website-NeoMorphism
-   ```
-3. Open `index.html` in your browser
 
-## 📂 Project Structure
+2. **Open the project**
+   - Open `index.html` in your preferred browser
+   - Or use a local development server
+
+3. **Customize the content**
+   - Update personal information in `index.html`
+   - Modify styles in `style.css`
+   - Add custom JavaScript in `script.js`
+
+## 📁 Project Structure
 
 ```
-Portfolio-Website-NeoMorphism/
-├── 📄 index.html          # Main HTML file
-├── 🎨 style.css           # Styling
-├── 🔧 script.js           # Functionality
-├── 📁 images/             # Assets
-│   ├── favicon.ico
+Personal-Portfolio/
+├── index.html          # Main HTML file
+├── style.css          # Stylesheet
+├── script.js          # JavaScript functionality
+├── images/            # Image assets
 │   ├── Profile.png
-│   └── project-*.png
-└── 📁 resume/             # Documents
-    └── CV.pdf
+│   ├── project-1.png
+│   ├── project-2.png
+│   ├── project-3.png
+│   ├── project-4.png
+│   └── favicon.ico
+└── README.md          # Project documentation
 ```
 
-## 🌐 Live Demo
+## 🤝 Contributing
 
-Experience the live version of the portfolio: [Portfolio Website](https://murshidm01.github.io/Portfolio-Website-Neomorphism/)
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 📫 Contact
 
-For any queries or suggestions, feel free to reach out through the contact form on the website.
+<div align="center">
+  <a href="https://github.com/MurShidM01" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+  <a href="https://linkedin.com/in/alikhanjalbani" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <a href="mailto:alikhanjalbani@outlook.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</div>
 
 ---
 
 <div align="center">
-Made with ❤️ by MurShidM
-</div>
+  <p>Made with ❤️ by <a href="https://github.com/MurShidM01">Ali Khan Jalbani</a></p>
+  <p>© 2024 MurShidM. All rights reserved.</p>
+</div> 
